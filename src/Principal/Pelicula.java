@@ -2,34 +2,35 @@ package Principal;
 
 public class Pelicula {
 	
-	private String id;
-	private String nombre;
-	private Generos genero;
-	private static int cont = 0;
+	private final int id;
+	private String Nombre;
+	private String Genero;
+	private static Integer cont = 0;
 	
-	public Pelicula() {
-		cont++;
-		id = Integer.toString(cont);
-		genero.setNombre("Sin genero");
-	}
 	public Pelicula(String nombre, String genero) {
 		cont++;
-		id = Integer.toString(cont);
-		this.nombre = nombre;
-		this.genero = new Generos(genero);
+		id = cont;
+		this.Nombre = nombre;
+		this.Genero = genero;
 	}
-	public String getId() {
+	public int getId() {
 		return id;
 	}
 	public String getNombre() {
-		return nombre;
+		return Nombre;
 	}
 	public void setNombre(String nombre) {
-		this.nombre = nombre;
+		this.Nombre = nombre;
+	}
+	static String ProxID() {
+		cont++;
+		Integer retorno= cont;
+		cont--;
+		return retorno.toString();
 	}
 	@Override
 	public String toString() {
-		return id + "- " + nombre + " - Genero: " + genero.toString();
+		return id + "- " + Nombre + " - Genero: " + Genero;
 	}
 	
 }

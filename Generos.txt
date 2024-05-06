@@ -1,0 +1,4 @@
+1 Terror
+2 Acción
+3 Suspenso
+4 Romántica
