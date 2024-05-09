@@ -15,14 +15,14 @@ public class PanelGenero extends JPanel{
 	public PanelGenero(List<Generos> listaGeneros){
 		setLayout(null);
 		
-		JLabel lblAgregarGeneros = new JLabel("Agregar Generos");
+		JLabel lblAgregarGeneros = new JLabel("Agregar g\u00E9neros");
 		lblAgregarGeneros.setHorizontalAlignment(SwingConstants.CENTER);
-		lblAgregarGeneros.setBounds(21, 11, 94, 14);
+		lblAgregarGeneros.setBounds(21, 11, 131, 14);
 		add(lblAgregarGeneros);
 		
-		JLabel lblGnerosYaExistentes = new JLabel("Gneros ya existentes");
+		JLabel lblGnerosYaExistentes = new JLabel("G\u00E9neros ya existentes");
 		lblGnerosYaExistentes.setHorizontalAlignment(SwingConstants.CENTER);
-		lblGnerosYaExistentes.setBounds(272, 11, 127, 14);
+		lblGnerosYaExistentes.setBounds(272, 11, 168, 14);
 		add(lblGnerosYaExistentes);
 		
 		JButton btnAgregar = new JButton("Agregar");

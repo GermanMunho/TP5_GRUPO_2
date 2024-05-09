@@ -33,7 +33,7 @@ public class PantallaInicio extends JFrame{
 	
 	public PantallaInicio() {
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		setBounds(100, 100, 409, 230);
+		setBounds(100, 100, 500, 300);
 		menuBar = new JMenuBar();
 		setJMenuBar(menuBar);
 		
